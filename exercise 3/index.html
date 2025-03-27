@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .completed {
+            color: green;
+        }
+        .not-completed {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Javascript Web Output #3</h1>
+    <button id="loadDataButton">Load data from the API</button>
+    <button id="clearTableButton">Clear Table</button>
+    <p id="apiInfo">
+        API: <a id="apiLink" href="https://jsonplaceholder.typicode.com/todos/" target="_blank">https://jsonplaceholder.typicode.com/todos/</a>
+    </p>
+    <div id="dataTable"></div>
+
+    <script src="main.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Web Output #2</h1>
+    <table id="tableInput">
+        <tr>
+            <td width="45%">
+                <label for="txtFirstName">First Name:</label>
+            </td>
+            <td>
+                <input type="text" id="txtFirstName">
+            </td>
+        </tr>
+        <tr>
+            <td width="45%">
+                <label for="txtMiddleName">Middle Name:</label>
+            </td>
+            <td>
+                <input type="text" id="txtMiddleName">
+            </td>
+        </tr>
+        <tr>
+            <td width="45%">
+                <label for="txtLastName">Last Name:</label>
+            </td>
+            <td>
+                <input type="text" id="txtLastName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="txtAge">Age:</label>
+            </td>
+            <td>
+                <input type="number" id="txtAge" min="1">
+            </td>
+        </tr>
+
+        <tr style="height:20px;">
+            <td></td>
+            <td style="padding-top: 15px;">
+                <button id="btnInsertUpdate">Insert</button>
+                <button id="btnClearFields">Clear</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <fieldset>
+        <legend>Records</legend>
+        <p id="status" style="color:rgba(149, 149, 149, 0.404); font-size: 12px;"></p>
+        <table id="tableRecords" style="border-collapse: collapse; margin: auto;"></table>
+    </fieldset>
+
+    <div>
+        <button id="btnClearRecords" style="margin-top: 10px;">Clear Records</button>
+        <label for="sortCriteria">Sort by:</label>
+        <select id="sortCriteriaDropdown">
+            <option value="">Please Select</option>
+            <option value="firstName">First Name</option>
+            <option value="lastName">Last Name</option>
+        </select>
+        <select id="sortOrderDropdown">
+            <option value="">Please Select</option>
+            <option value="asc">A-Z</option>
+            <option value="desc">Z-A</option>
+        </select>
+        <button id="btnSaveData" style="margin-top: 10px;">Save to Local Storage</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
